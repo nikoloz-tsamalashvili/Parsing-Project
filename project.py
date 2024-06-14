@@ -32,7 +32,7 @@ while ind < 6:
         mouse_info = mouse.h4.a.text.strip()
         mouse_prices = mouse.find('div', class_='product-details').p
         mouse_type = mouse_info[:(mouse_info.find('-') - 1)]
-        mouse_name = mouse_info[(mouse_info.find('- ') + 1):].strip()
+        mouse_name = mouse_info[(mouse_info.find('- ') + 2):]
         price_info = mouse_prices.text.strip()
         index = (mouse_prices.text.strip().find('ლ'))
         price = price_info[ : index].strip()
